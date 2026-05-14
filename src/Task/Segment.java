@@ -19,9 +19,7 @@ public class Segment {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Segment)) return false;
-
-        Segment segment = (Segment) o;
+        if (!(o instanceof Segment segment)) return false;
 
         return Objects.equals(start, segment.start)
                 && Objects.equals(end, segment.end);

@@ -3,7 +3,7 @@ package Task;
 import java.util.ArrayList;
 
 public class Solution {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
     }
 
@@ -23,8 +23,7 @@ public class Solution {
                     maxNests = currentNests;
                     result.clear();
                     result.add(new Segment(prev, bracket.val));
-                }
-                else if (currentNests == maxNests) {
+                } else if (currentNests == maxNests) {
                     result.add(new Segment(prev, bracket.val));
                 }
             }

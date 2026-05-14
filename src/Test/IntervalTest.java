@@ -1,8 +1,7 @@
 package Test;
 
-import Task.Solution;
 import Task.Segment;
-import org.junit.jupiter.api.DisplayName;
+import Task.Solution;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
