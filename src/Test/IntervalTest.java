@@ -26,6 +26,20 @@ class IntervalTest {
     }
 
     @Test
+    void testSingleInterval() {
+
+        ArrayList<Segment> segments = new ArrayList<>();
+        segments.add(new Segment(1, 5));
+
+        ArrayList<Segment> expected = new ArrayList<>();
+        expected.add(new Segment(1, 5));
+
+        ArrayList<Segment> actual = Solution.solve(segments);
+
+        assertEquals(expected, actual);
+    }
+
+    @Test
     void testTwoDisjointMaxIntervals() {
         ArrayList<Segment> segments = new ArrayList<>();
         segments.add(new Segment(1, 3));
